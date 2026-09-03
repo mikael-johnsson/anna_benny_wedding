@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Boende from "./components/Boende";
 import Transport from "./components/Transport";
 import Tal from "./components/Tal";
@@ -58,14 +57,14 @@ export default function Home() {
           ner finns ett formulär där ni kan ge oss lite extra info som
           underlättar inför helgen.
         </p>
-        <p className="paragraph paragraphMid mb-10!">
+        <div className="paragraph paragraphMid mb-10!">
           <span className="font-bold">Snabbinfo</span>
           <ul>
             <li>Datum: 24 juli 2027</li>
             <li>Plats: Ängsberga Gård, Trelleborg</li>
             <li>Klädkod: Kavaj</li>
           </ul>
-        </p>
+        </div>
 
         <ImageHaul images={["/par_1.jpeg", "/par_2.jpeg"]} />
       </section>
