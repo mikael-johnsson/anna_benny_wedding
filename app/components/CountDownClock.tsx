@@ -23,20 +23,28 @@ const CountdownClock = () => {
 		<div className="w-80 mx-auto md:w-100">
 			<div className={`flex justify-center gap-5 md:gap-10 p-3 md:py-4`}>
 				<div className="w-15 sm:w-20  md:w-30  flex flex-col items-center justify-center bg-accent-green text-bg-beige rounded-lg p-2 gap-1">
-					<p className="text-center text-xl">{timeRemaining.days}</p>
-					<p className="text-[9px] sm:text-md">DAGAR</p>
+					<p className="text-center font-bold  text-2xl">
+						{timeRemaining.days}
+					</p>
+					<p className="text-[12px] font-bold  sm:text-md">DAGAR</p>
 				</div>
 				<div className="w-15 sm:w-20 md:w-30  flex flex-col items-center justify-center bg-accent-green text-bg-beige rounded-lg p-2 gap-1">
-					<p className="text-center text-xl">{timeRemaining.hours}</p>
-					<p className="text-[9px] sm:text-md">TIMMAR</p>
+					<p className="text-center font-bold  text-2xl">
+						{timeRemaining.hours}
+					</p>
+					<p className="text-[12px] font-bold  sm:text-md">TIMMAR</p>
 				</div>
 				<div className="w-15 sm:w-20  md:w-30  flex flex-col items-center justify-center bg-accent-green text-bg-beige rounded-lg p-2 gap-1">
-					<p className="text-center text-xl">{timeRemaining.minutes}</p>
-					<p className="text-[9px] sm:text-md">MINUTER</p>
+					<p className="text-center font-bold  text-2xl">
+						{timeRemaining.minutes}
+					</p>
+					<p className="text-[12px] font-bold  sm:text-md">MINUTER</p>
 				</div>
 				<div className="w-15 sm:w-20 md:w-30  flex flex-col items-center justify-center bg-accent-green text-bg-beige rounded-lg p-2 gap-1">
-					<p className="text-center text-xl">{timeRemaining.seconds}</p>
-					<p className="text-[9px] sm:text-md">SEKUNDER</p>
+					<p className="text-center font-bold  text-2xl">
+						{timeRemaining.seconds}
+					</p>
+					<p className="text-[12px] font-bold  sm:text-md">SEKUNDER</p>
 				</div>
 			</div>
 		</div>

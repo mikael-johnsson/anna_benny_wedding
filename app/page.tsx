@@ -14,22 +14,24 @@ export default function Home() {
 		<main className="flex flex-col items-center justify-center pb-20 px-3">
 			<section
 				id="hem"
-				className="h-screen w-full flex flex-col items-center justify-center"
+				className="mt-5 h-[80vh] w-[90%] flex flex-col items-center justify-center rounded-2xl bg-[url('/havre.jpeg')] bg-cover bg-center"
 			>
 				<div className="flex flex-col items-center gap-4 justify-center">
 					<h1 className="text-center font-bold text-4xl">
 						Anna & Bennys Bröllop
 					</h1>
 					<div className="w-80 xs:w-100  px-3 py-2">
-						<p className="text-center text-2xl">24 juli 2027</p>
+						<p className="text-center font-bold  text-2xl">24 juli 2027</p>
 					</div>
 					<div className="w-90 xs:w-100  px-3 py-2">
-						<p className="text-center text-xl">Ängsberga Gård, Trelleborg</p>
+						<p className="text-center font-bold  text-xl">
+							Ängsberga Gård, Trelleborg
+						</p>
 					</div>
 					<CountdownClock />
 				</div>
 			</section>
-			<section className="mb-10">
+			<section className="mb-10 mt-10">
 				<p className="paragraph paragraphMid">
 					<span className="text-2xl">Hej!</span> <br />
 					Vad kul att ni vill fira vår bröllopsdag med oss! Vi ser så mycket
