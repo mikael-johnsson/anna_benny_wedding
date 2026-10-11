@@ -39,13 +39,13 @@ const Form = () => {
 				bröllopshelgen.
 			</p>
 			{haveSubmitted && (
-				<p className="text-center text-green-600">
+				<p className="text-center text-green-600 text-lg">
 					Tack för ditt svar! Vi ses på bröllopet!
 				</p>
 			)}
 			<form
 				onSubmit={handleSubmit}
-				className="w-full max-w-120 px-3 py-2 flex flex-col gap-3 items-center"
+				className={`w-full max-w-120 px-3 py-2 flex flex-col gap-3 items-center ${haveSubmitted ? "border border-green-600" : ""}`}
 			>
 				<div className="inputContainer">
 					<label htmlFor="name">Jag heter</label>
