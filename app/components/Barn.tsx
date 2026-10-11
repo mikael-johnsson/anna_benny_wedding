@@ -1,15 +1,18 @@
 import React from "react";
 
 const Barn = () => {
-  return (
-    <section className="section items-end">
-      <h2 className="heading headingRight">Barn</h2>
-      <p className="paragraph paragraphRight">
-        Självklart är ammande barn välkomna men just idag önskar vi att barn
-        under 13 år stannar hemma.
-      </p>
-    </section>
-  );
+	return (
+		<section
+			id="barn"
+			className="section items-start"
+		>
+			<h2 className="heading headingLeft">Barn</h2>
+			<p className="paragraph paragraphLeft">
+				Självklart är ammande barn välkomna men just idag önskar vi att barn
+				under 13 år stannar hemma.
+			</p>
+		</section>
+	);
 };
 
 export default Barn;

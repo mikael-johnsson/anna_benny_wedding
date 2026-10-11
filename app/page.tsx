@@ -6,11 +6,16 @@ import Barn from "./components/Barn";
 import Form from "./components/Form";
 import Vigsel from "./components/Vigsel";
 import ImageHaul from "./components/ImageHaul";
+import CountdownClock from "./components/CountDownClock";
+import Fredag from "./components/Fredag";
 
 export default function Home() {
 	return (
 		<main className="h-full flex flex-col items-center justify-center pb-20">
-			<section className="h-screen w-full flex flex-col items-center justify-center">
+			<section
+				id="hem"
+				className="h-screen w-full flex flex-col items-center justify-center"
+			>
 				<div className="flex flex-col items-center gap-4 justify-center mb-15">
 					<div className="">
 						<h1 className="text-center font-bold text-4xl">
@@ -23,6 +28,7 @@ export default function Home() {
 					<div className="w-90 xs:w-100  px-3 py-2">
 						<p className="text-center text-xl">Ängsberga Gård, Trelleborg</p>
 					</div>
+					<CountdownClock />
 				</div>
 			</section>
 			<section className="mb-10">
@@ -42,6 +48,7 @@ export default function Home() {
 						<li>Datum: 24 juli 2027</li>
 						<li>Plats: Ängsberga Gård, Trelleborg</li>
 						<li>Klädkod: Kavaj</li>
+						<li>Vigsel: 14:00</li>
 					</ul>
 				</div>
 
@@ -49,14 +56,13 @@ export default function Home() {
 			</section>
 			<Vigsel />
 			<Boende />
+			<Fredag />
 			<Transport />
 			<Tal />
 			<Barn />
 			<Gavor />
 			<Form />
-			<ImageHaul
-				images={["/dukning_2.jpg", "/dukning_1.jpg", "/veranda_1.jpg"]}
-			/>
+			<ImageHaul images={["/dukning_2.jpg", "/veranda_1.jpg"]} />
 		</main>
 	);
 }

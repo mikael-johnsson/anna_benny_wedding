@@ -1,5 +1,10 @@
 @theme {
-	--color-background: #eef5db;
+	/* --color-background: #eef5db; ljusgul */
+	/* --color-background: #ffd1cb; ljusrosa */
+	--color-background: #dbf7ba; /*ljusgrön*/
+	/* --color-background: #b3cb98; grågrön */
+	--color-background-secondary: #dafaba; /*ljusgrön*/
+
 	--color-text-primary: #231b1b;
 }
 

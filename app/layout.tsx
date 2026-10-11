@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { Bellota } from "next/font/google";
+import Header from "./components/Header";
 
 const inter = Inter({
 	variable: "--font-inter",
@@ -28,7 +29,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 			lang="en"
 			className={` ${bellota.variable} h-full antialiased`}
 		>
-			<body className="min-h-full flex flex-col">{children}</body>
+			<body className="min-h-full flex flex-col">
+				<Header />
+				{children}
+			</body>
 		</html>
 	);
 }

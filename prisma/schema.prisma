@@ -16,6 +16,8 @@ model Info {
   id                String   @id @default(cuid())
   createdAt         DateTime @default(now())
   name              String
+  phone             String @default("-")
+  email             String @default("-")
   plusOne           String
   fridayDinner      String
   allergies         String
