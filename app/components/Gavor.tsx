@@ -13,7 +13,7 @@ const Gavor = () => {
 				bidrag till bröllopsresan.
 			</p>
 			<p className="paragraph paragraphRight">
-				Gåvor kan swishas till Anna på{" "}
+				Gåvor kan swishas till Anna på <br />
 				<span className="font-bold">073-427 37 27</span>.
 			</p>
 		</section>

@@ -19,8 +19,8 @@ const Boende = () => {
 				</Link>
 				. Uppge koden <span className="italic">WEDDING</span> och att ni är
 				gäster till Anna & Bennys bröllop för 15% rabatt. Ni bokar genom att
-				maila xxxx@xxx.com. Man får självklart bo på annat hotell också om man
-				vill det.
+				maila <span className="italic">book@clarionlive.se</span>. Man får
+				självklart bo på annat hotell också om man vill det.
 			</p>
 		</section>
 	);

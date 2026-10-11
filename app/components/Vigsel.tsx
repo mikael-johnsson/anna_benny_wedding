@@ -6,7 +6,7 @@ const Vigsel = () => {
 		>
 			<h2 className="heading">Vigsel</h2>
 			<p className="paragraph paragraphRight">
-				Vigsel och bröllopsmiddag sker på samma gård, Ängsberga gård på
+				Vigsel och bröllopsmiddag sker på samma plats, Ängsberga gård på
 				Ugglarpsvägen 296, 231 96 Trelleborg.
 			</p>
 			<p className="paragraph paragraphRight">

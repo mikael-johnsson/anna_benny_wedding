@@ -11,7 +11,7 @@ import Fredag from "./components/Fredag";
 
 export default function Home() {
 	return (
-		<main className="flex flex-col items-center justify-center pb-20">
+		<main className="flex flex-col items-center justify-center pb-20 px-3">
 			<section
 				id="hem"
 				className="h-screen w-full flex flex-col items-center justify-center"

@@ -7,8 +7,8 @@ const Fredag = () => {
 			<h2 className="heading">Fredagen</h2>
 			<p className="paragraph paragraphRight">
 				För er som vill äter vi middag tillsammans på fredag kväll. Alla är
-				välkomna men det är ingen obligatorisk närvaro på middagen. Anmälan till
-				middagen sker i formläret nedan.
+				välkomna men det är ingen obligatorisk närvaro. Anmälan till middagen
+				sker i formläret nedan.
 			</p>
 		</section>
 	);
