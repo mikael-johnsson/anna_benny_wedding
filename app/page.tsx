@@ -11,17 +11,15 @@ import Fredag from "./components/Fredag";
 
 export default function Home() {
 	return (
-		<main className="h-full flex flex-col items-center justify-center pb-20">
+		<main className="flex flex-col items-center justify-center pb-20">
 			<section
 				id="hem"
 				className="h-screen w-full flex flex-col items-center justify-center"
 			>
-				<div className="flex flex-col items-center gap-4 justify-center mb-15">
-					<div className="">
-						<h1 className="text-center font-bold text-4xl">
-							Anna & Bennys Bröllop
-						</h1>
-					</div>
+				<div className="flex flex-col items-center gap-4 justify-center">
+					<h1 className="text-center font-bold text-4xl">
+						Anna & Bennys Bröllop
+					</h1>
 					<div className="w-80 xs:w-100  px-3 py-2">
 						<p className="text-center text-2xl">24 juli 2027</p>
 					</div>

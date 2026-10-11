@@ -13,6 +13,7 @@ const Header = () => {
 		{ href: "#hem", label: "HEM" },
 		{ href: "#vigsel", label: "VIGSELN" },
 		{ href: "#boende", label: "BOENDE" },
+		{ href: "#fredag", label: "FREDAGEN" },
 		{ href: "#transport", label: "TRANSPORT" },
 		{ href: "#tal", label: "TAL" },
 		{ href: "#barn", label: "BARN" },
