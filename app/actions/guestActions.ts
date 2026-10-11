@@ -11,7 +11,7 @@ export const createInfo = async (formData: FormData) => {
 	const transport = formData.get("transport") as string;
 
 	try {
-		const res = await prisma.info.create({
+		await prisma.info.create({
 			data: {
 				name,
 				plusOne,
@@ -22,8 +22,9 @@ export const createInfo = async (formData: FormData) => {
 				transport,
 			},
 		});
-		console.log("response from createInfo:", res); // Det här loggar det skapade objektet
+		return true;
 	} catch (error) {
 		console.error("Error creating info:", error);
+		return false;
 	}
 };

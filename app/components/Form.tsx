@@ -16,13 +16,19 @@ const Form = () => {
 	const handleSubmit = async (e: SubmitEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		const formData = new FormData(e.currentTarget);
-		createInfo(formData);
+		const res = await createInfo(formData);
+		if (!res) {
+			alert("Något gick fel, försök igen senare.");
+			return;
+		}
 		setHaveSubmitted(true);
 		setName("");
 		setPlusOne("");
 		setFridayDinner("");
 		setAllergies("");
 		setTransport("");
+		setPhone("");
+		setEmail("");
 		setTimeout(() => {
 			setHaveSubmitted(false);
 		}, 5000);
@@ -38,14 +44,10 @@ const Form = () => {
 				Här kan du ge lite info som brudparet och toastmasters behöver till
 				bröllopshelgen.
 			</p>
-			{haveSubmitted && (
-				<p className="text-center text-green-600 text-lg">
-					Tack för ditt svar! Vi ses på bröllopet!
-				</p>
-			)}
+
 			<form
 				onSubmit={handleSubmit}
-				className={`w-full max-w-120 px-3 py-2 flex flex-col gap-3 items-center ${haveSubmitted ? "border border-green-600" : ""}`}
+				className={`w-full max-w-120 px-3 py-2 flex flex-col gap-3 items-center ${haveSubmitted ? "border-2 border-green-600" : ""}`}
 			>
 				<div className="inputContainer">
 					<label htmlFor="name">Jag heter</label>
@@ -90,7 +92,7 @@ const Form = () => {
 					<label htmlFor="email">Min emailadress</label>
 					<input
 						className="border rounded w-full px-3 py-2 h-9"
-						type="text"
+						type="email"
 						name="email"
 						id="email"
 						placeholder="namn@namnsson.se"
@@ -142,6 +144,11 @@ const Form = () => {
 						onChange={(e) => setTransport(e.target.value)}
 					/>
 				</div>
+				{haveSubmitted && (
+					<p className="text-center text-green-600 text-lg">
+						Tack för ditt svar! Vi ses på bröllopet!
+					</p>
+				)}
 				<button className="border bg-text-primary text-background rounded-xl p-2 w-30 hover:cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-200">
 					Skicka
 				</button>
