@@ -40,7 +40,7 @@ const Form = () => {
 			</p>
 			{haveSubmitted && (
 				<p className="text-center text-green-600">
-					Tack för att ditt svar! Vi ses på bröllopet!
+					Tack för ditt svar! Vi ses på bröllopet!
 				</p>
 			)}
 			<form

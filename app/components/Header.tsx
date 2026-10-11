@@ -46,11 +46,11 @@ const Header = () => {
 	}, [menuOpen]);
 
 	return (
-		<header className="sticky top-4 z-50 opacity-94 shadow-lg rounded-4xl max-w-260 mx-auto mt-4 px-4 md:px-12 bg-background-secondary">
+		<header className="sticky top-4 z-50 opacity-94 shadow-lg rounded-4xl w-full mx-auto mt-4 px-4 md:px-12 bg-background-secondary">
 			<div className="container mx-auto py-4 md:py-6">
 				<div
 					ref={mobileMenuRef}
-					className="md:hidden"
+					className="md:hidden ml-auto"
 				>
 					<div className="flex items-center justify-end">
 						<button
@@ -85,7 +85,7 @@ const Header = () => {
 				</div>
 
 				<div className="hidden md:flex md:items-center md:justify-center">
-					<nav className="flex items-center grow-2 justify-center">
+					<nav className="flex flex-wrap items-center grow-2 justify-center">
 						{links.map((link) => (
 							<Link
 								key={link.href}
