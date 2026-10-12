@@ -14,7 +14,7 @@ const Gavor = () => {
 			</p>
 			<p className="paragraph paragraphRight">
 				Gåvor kan swishas till Anna på <br />
-				<span className="font-bold">073-427 37 27</span>.
+				<span className="font-bold whitespace-nowrap">073-427 37 27</span>.
 			</p>
 		</section>
 	);

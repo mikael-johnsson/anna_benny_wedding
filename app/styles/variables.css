@@ -13,6 +13,7 @@
 	font-size: 1.1rem;
 	font-weight: 400;
 	width: 300px;
+	text-wrap: pretty;
 }
 
 .paragraphMid {
