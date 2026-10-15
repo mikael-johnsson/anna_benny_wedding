@@ -2,6 +2,7 @@ import prisma from "../lib/prisma";
 import { Info } from "../models/Info";
 import InfoCard from "./components/InfoCard";
 
+export const dynamic = "force-dynamic";
 const GuestPage = async () => {
 	const allInfo = (await prisma.info.findMany({})) as Info[];
 	if (allInfo.length === 0) {
